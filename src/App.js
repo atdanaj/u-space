@@ -28,12 +28,12 @@ function App() {
     <ApolloProvider client={connection}>
       <ThemeProvider theme={theme}>
         <div className="App">
-          {isAuthenticated && <ResponsiveAppBar />}
+          <ResponsiveAppBar />
           <BrowserRouter>
             <Routes>
               <Route path="/visualize" element={<Visualize />} />
               <Route path="/manifest" element={<Manifest />} />
-              <Route path="/" element={<Login />} />
+              <Route path="/u-space" element={<Login />} />
             </Routes>
           </BrowserRouter>
         </div>
